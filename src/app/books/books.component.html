@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+    <div class="col-md-4">
+        <img [src]="book?.cover" class="card-img-top" alt="...">
+        <button type="button" class="btn btn-sm btn-warning" id="wantoread" (click)="read()">Want to Read <i class="fa-solid fa-book-open-reader"></i></button>
+     </div>
+    <div class="col-md-8">
+    <div class="name"><h1>{{book?.name}}</h1></div>
+    <div class="author"><h3>-{{book?.author}}</h3></div>
+    <div class="rating">
+        <app-star-rating [rating]="book?.rating" [isReadOnly]="true"></app-star-rating> 
+    </div>
+    <div class="description"><h4>Description</h4></div>
+       <div class="content"> {{book?.description}}</div>
+    </div>
+</div>
+</div>
+
+<div class="modal" id="vipmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--modal header-->
+            <div class="modal-header bg-warning text-white">
+                <h6 class="modal-title">Get Subscription</h6>
+                <button type="button" class="btn-close btn-sm text-warning" id="closebutton" (click)="onCloseModal()"></button>
+            </div>
+            <form #userForm="ngForm">
+                <!--model body-->
+                <div class="modal-body">
+                    <div class="row">
+                        <h4 class="text-center ">Start Reading our Books in <br><span class="text-warning"> The Reading Room </span></h4><p class="text-secondary text-center ">Subscription Packs</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let plan of plans">
+                        <div class="card">
+                            <div class="name text-center text-default">{{plan.name}}</div>
+                            <div class="price text-warning"><h5 class="text-center">{{ plan.price | currency:'INR'}}</h5></div>
+                            <div class="benefits text-secondary text-center"><p>{{plan.Benefits}} </p> </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="row">
+                 <h5 class="text-warning text-center"> Be Subscribed Be Entertained!</h5> 
+                    </div>
+                </div><br>
+            </form>
+        </div>
+    </div>
+</div>
