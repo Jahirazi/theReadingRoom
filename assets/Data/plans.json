@@ -1,0 +1,18 @@
+[
+    {
+        "price":99,
+        "name":"Silver",
+        "Benefits":"Get 10 books for 3 Months"
+        
+    },
+    {
+        "price": 499,
+        "name":"Gold",
+        "Benefits":"Get 25 books for 6 Months"
+    },
+    {
+        "price":999 ,
+        "name":"Diamond",
+        "Benefits":"Get Unlimited books for a Year"
+    }
+]
