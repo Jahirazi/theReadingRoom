@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="book-lists">
+                <h4>&nbsp;List of Books</h4>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="books-thumbnail">
+                            <div class="row">
+                                <div class="col-md-4" *ngFor="let book of bookLists">
+                                    <div class="card mb-3" style="max-width: 18rem;" (click)="gotoBooks('bookLists',book.id)">
+                                        <img [src]="book.cover" class="card-img-top" alt="...">
+                                        <div class="card-body" >
+                                            <div class="card-title text-warning">{{ book.name }}</div>
+                                <div class="card-text"> 
+                                    <app-star-rating [rating]="book.rating" [isReadOnly]="true"></app-star-rating> 
+                                
+                                </div>
+                                            <button class="btn btn-warning" (click)="gotoBooks('bookLists',book.id)">View Book <i class="fa-solid fa-book-open-reader"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h4>&nbsp; Most Readed Books</h4>
+            <div class="container">
+                <div class="movies"*ngFor="let book of mostReaded">
+                  <div class="detail">
+                    <div class="name"><a href="">{{book.name}}</a></div>
+                    <div class="rating">
+                    <app-star-rating [rating]="book.rating" [isReadOnly]="true"></app-star-rating> 
+                  </div>
+                  
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
