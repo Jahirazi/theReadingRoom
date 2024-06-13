@@ -1,0 +1,44 @@
+[
+    {
+        "id":10,
+        "name":"Harry Potter and the Sorcerer's Stone",
+        "author":"J.K. Rowling",
+        "rating":4.25
+    },
+    {
+        "id":11,
+        "name":"Twilight",
+        "author":"Stephenie Meyer",
+        "rating":4.25
+    },
+    {
+        "id":12,
+        "name":"The Fault in Our Stars",
+        "author":"John Green",
+        "rating":4.25
+    },
+    {
+        "id":13,
+        "name":"1984",
+        "author":"Thomas Pynchon",
+        "rating":4.25
+    },
+    {
+        "id":14,
+        "name":"Pride and Prejudice",
+        "author":"Jane Austen",
+        "rating":4.25
+    },
+    {
+        "id":15,
+        "name":"The Great Gatsby",
+        "author":"F. Scott",
+        "rating":4.25
+    },
+    {
+        "id":16,
+        "name":"The Hunger Games",
+        "author":"Suzanne Collins",
+        "rating":4.25
+    }
+]
