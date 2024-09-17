@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: 92vh;
-    background-color: rgb(220,238,174);
+    background-color: rgb(205, 242, 112);
     background: radial-gradient(circle,rgba(220,238,174,1) 0%,rgba(233,227,148,1)100%);
     overflow: hidden;
 }
@@ -48,6 +48,15 @@ button{
         width: 80%;
         margin-top: 5%;
         padding: 20%;
+    }
+    .brand{
+        margin-top: -80%;
+    }
+    .Login{
+        margin-top: -70%;
+    }
+    .Login input{
+        width: 170%;
     }
 }
 

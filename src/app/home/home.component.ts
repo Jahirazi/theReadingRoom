@@ -19,12 +19,12 @@ export class HomeComponent implements OnInit{
    this.getmostReaded();
   }
   getBookLists(){
-    this.http.get('http://localhost:4200/assets/Data/bookLists.json').subscribe((books)=>{
+    this.http.get('assets/Data/bookLists.json').subscribe((books)=>{
       this.bookLists = books;
     });
   }
   getmostReaded(){
-    this.http.get('http://localhost:4200/assets/Data/mostReaded.json').subscribe((books)=>{
+    this.http.get('assets/Data/mostReaded.json').subscribe((books)=>{
       this.mostReaded = books;
     });
   }
